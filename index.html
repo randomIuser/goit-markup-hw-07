@@ -31,6 +31,20 @@
           <a class="header-logo link" href="./index.html"
             >Web<span class="logo-studio">Studio</span>
           </a>
+          <!-- hamburger button -->
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <img
+              width="32"
+              height="22"
+              src="./images/menu-hamburger.svg"
+              alt="mobile menu"
+            />
+          </button>
+          <!---->
           <ul class="list header-nav-list">
             <li>
               <a class="link header-nav-link active" href="./index.html"
@@ -136,7 +150,8 @@
           <ul class="service-list list card-set">
             <li class="card-set-item">
               <img
-                src="./images/rectangle71-2.jpg"
+                srcset="./images/what are we doing/monitor@1x.jpg 1x, ./images/what are we doing/monitor@2x.jpg 2x"
+                src="./images/what are we doing/monitor@1x.jpg"
                 alt="PC screen"
                 width="360"
                 height="300"
@@ -144,7 +159,8 @@
             </li>
             <li class="card-set-item">
               <img
-                src="./images/rectangle71-1.jpg"
+                srcset="./images/what are we doing/mob-scr@1x.jpg 1x, ./images/what are we doing/mob-scr@2x.jpg 2x"
+                src="./images/what are we doing/mob-scr@1x.jpg"
                 alt="Smartphone screens"
                 width="360"
                 height="300"
@@ -152,7 +168,8 @@
             </li>
             <li class="card-set-item">
               <img
-                src="./images/rectangle71.jpg"
+                srcset="./images/what are we doing/mob-lapt@1x.jpg 1x, ./images/what are we doing/mob-lapt@2x.jpg 2x"
+                src="./images/what are we doing/mob-lapt@1x.jpg"
                 alt="Smartphone and laptop"
                 width="360"
                 height="300"
@@ -168,7 +185,11 @@
           <ul class="team-list list card-set">
             <li class="team-list-item card-set-item">
               <img
-                src="./images/marc.jpg"
+                srcset="
+                  ./images/team/mark-img@1x.jpg 1x,
+                  ./images/team/mark-img@2x.jpg 2x
+                "
+                src="./images/team/mark-img@1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -234,7 +255,11 @@
             </li>
             <li class="team-list-item card-set-item">
               <img
-                src="./images/tom.jpg"
+                srcset="
+                  ./images/team/tom-img@1x.jpg 1x,
+                  ./images/team/tom-img@2x.jpg 2x
+                "
+                src="./images/team/tom-img@1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -300,7 +325,11 @@
             </li>
             <li class="team-list-item card-set-item">
               <img
-                src="./images/camila.jpg"
+                srcset="
+                  ./images/team/camila-img@1x.jpg 1x,
+                  ./images/team/camila-img@2x.jpg 2x
+                "
+                src="./images/team/camila-img@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -366,7 +395,11 @@
             </li>
             <li class="team-list-item card-set-item">
               <img
-                src="./images/daniel.jpg"
+                srcset="
+                  ./images/team/daniel-img@1x.jpg 1x,
+                  ./images/team/daniel-img@2x.jpg 2x
+                "
+                src="./images/team/daniel-img@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -521,7 +554,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
           <a class="footer-logo link" href="./index.html"
@@ -605,9 +638,9 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <!-- MODAL Window -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -678,6 +711,100 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-btn js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mob-men-item">
+          <a href="portfolio.html" class="mob-men-link">Portfolio</a>
+        </li>
+        <li class="mob-men-item">
+          <a href="index.html" class="mob-men-link">Studio</a>
+        </li>
+        <li class="mob-men-item">
+          <a href="" class="mob-men-link active">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mob-menu-contacts list">
+        <li>
+          <a class="link mob-contact-item1" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="link mob-contact-item2" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu-socials-list list">
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="instagram icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="twitter icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="facebook icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener no-referrer"
+            aria-label="linkedin icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- SCRIPTS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
