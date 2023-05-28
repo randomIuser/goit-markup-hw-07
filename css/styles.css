@@ -259,7 +259,6 @@ img {
   align-items: center;
   justify-content: center;
   margin: 0;
-  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -382,7 +381,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(images/retina-pics/hero-img-mobile@1x.jpg);
+    url(../images/retina-pics/hero-img-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -396,7 +395,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(images/retina-pics/hero-img-mobile@2x.jpg);
+      url(../images/retina-pics/hero-img-mobile@2x.jpg);
   }
 }
 @media only screen and (min-width: 429px) {
