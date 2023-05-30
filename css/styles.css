@@ -83,7 +83,6 @@ img {
 }
 .container {
   /* basic styles */
-  min-width: 320px;
   max-width: 396px;
   padding: 0 16px;
   margin: 0 auto;
@@ -519,7 +518,7 @@ img {
 }
 .values-item {
   /*  */
-  width: 396px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .values-item {
