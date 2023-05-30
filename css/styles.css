@@ -856,16 +856,15 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
   .footer-container {
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 496px;
-    margin-left: 108px;
+    width: 552px;
   }
 }
 
@@ -898,9 +897,8 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
+  display: inline-block;
   margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
 }
 @media only screen and (min-width: 768px) {
   .footer-logo {
@@ -913,6 +911,7 @@ img {
 .footer-descr-container {
   display: flex;
   justify-content: center;
+  text-align: left;
 }
 .footer-descr {
   color: var(--light);
@@ -929,8 +928,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--white-background);
   margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
 }
 @media only screen and (min-width: 768px) {
   .footer-element-heading {
@@ -1077,7 +1074,7 @@ img {
   visibility: hidden;
 }
 .modal {
-  min-width: 320px;
+  width: 392px;
   min-height: 576px;
   background-color: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1089,6 +1086,11 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-time);
+}
+@media only screen and (max-width: 428px) {
+  .modal {
+    width: 95%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .modal {
